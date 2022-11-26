@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "version": "0.0.1",
+    "name": "Timer",
+    "description": "simple timer for tests",
+    "icons": {
+        "16": "clock.png",
+        "48": "clock.png",
+        "128": "clock.png"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "clock.png",
+            "24": "clock.png",
+            "32": "clock.png"
+        },
+        "default_title": "timer default title"
+    },
+    "options_page": "options.html",
+    "permissions": ["storage", "alarms", "notifications"],
+    "background": {
+        "service_worker": "background.js"
+    }
+}
